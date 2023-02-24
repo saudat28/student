@@ -1,0 +1,558 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-family: 'Nunito-Regular';
+    scroll-behavior: smooth ;
+    height: 100%;
+    font-size: 16px;
+    background-size: contain;
+    font-family:  'Monteserrat';
+}
+/* Font faces */
+@font-face {
+    font-family: 'Cubano-Regular';
+    src: local('Cubano-Regular.otf'), url(Cubano-Regular.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Monteserrat';
+    src: local('Monteserrat.ttf'), url(Monteserrat.ttf) format('truetype');
+}
+.nav{
+   background-color: rgba(9, 8, 8, 0.65);
+    transition: all 0.3s ease-in-out;
+}
+nav.active{
+    position: fixed;
+    transition: o.5s;
+    width: 100%;
+}
+.nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+}
+h1.logo a{
+    font-size: 25px;
+    font-weight: 700;
+    float: left;
+    color: white;
+    padding: 7px 15px;
+
+}
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+.nav a.current,
+.nav a:hover{
+    color:rgb(131, 57, 7);
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.cover-section{
+    background-image: url(../img/student.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 90vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0px;
+    z-index: -2 !important;
+
+}
+
+/* Making the cover section with blacktransparent */
+
+.cover-section h1{
+    font-size: 46px;
+    margin: -20px 0 20px;
+}
+.cover-sectionp p{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.cover-section .container{
+    padding-top: 300px;
+}
+.joinbtn button:hover{
+background-color: #b98306;
+transition: 2s;
+}
+.joinbtn button{
+    height: 50px;
+    width: 130px;
+    border-radius: 4px 4px;
+    transition: 2s;
+    background-color: #694c07;
+    color: white;
+}
+
+.service-section{
+    background-color: aliceblue;
+}
+/* displaying in columns*/
+.column{
+    float: left;
+    width: 90%;
+    padding: 10px;
+    border-radius: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.grid{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   
+    padding: 20px 5px 20px 5px;
+}
+
+.cards h2{
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    padding: 45px 0;
+    color: rgb(85, 40, 9);;
+}
+.card-header h3{
+    text-align: center;
+    font-size: 25px;
+    
+
+}
+.cards .column{
+    background-color: rgba(95, 126, 134, 0.532);
+
+}
+
+.column img{
+    height: 180px;
+    width: 440px;
+    transition: 1s;
+}
+.column img:hover{
+    transform: scale(0.98);
+}
+.column p{
+    font-size: 20px;
+}
+
+.parallax{
+    text-align: center;
+    background: url(../img/cover.jpg) center repeat fixed;
+  
+    color: aliceblue;
+    height:450px;
+    background-size: cover;
+}
+
+.call{
+    height: 90px;
+    background-color: #694c07;
+    color: white;
+    font-size: 30px;
+    width: 450px;
+    float: right;
+}
+.call:hover{
+    background-color: #b98306;
+    transition: 2s;
+
+}
+.parallax h2{
+   font-size: 25px;
+   padding-top: 50px; 
+}
+.parallax .grid{
+margin-top: 100px;
+}
+.call p{
+    padding-top: 16px;
+}
+.call ul li{
+    display: inline-block;
+    padding-top: 20px;
+}
+.parallax-btn button{
+    float: left;
+    height: 70px;
+    width: 300px;
+    font-size: 20px;
+    border-radius: 4px 4px;
+    transition: 2s;
+    color: white;
+    background-color: #694c07;
+ 
+}
+
+.parallax-btn button:hover{
+    background-color: #b98306;
+    transition: 2s;
+}
+/*footer section */
+.footer{
+    background-color:rgb(53, 60, 65);
+    padding-bottom: 10px;
+    text-align:center;
+    clear: both;
+    height:140px;
+    bottom: 0px;
+   color: white;
+    
+}
+.social-links li a {
+    list-style: none;
+    float: right;
+    color: white;
+
+}
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 30px;
+    padding-right: 25px; 
+}
+.social-links li:last-child{
+    margin-right: 0;
+}
+
+.social-links li a:link, 
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    font-size: 38px;
+}
+.social-links {
+    color: white;
+}
+
+.fa-facebook:hover{
+    color: rgb(59, 89, 152);
+}
+.fa-instagram:hover{
+    color: rgb(195, 42, 163);
+}
+.fa-twitter:hover{
+    color: rgb(0, 172, 237);
+}
+.fa-linkedin:hover{
+    color: rgb(0, 123, 182);
+}
+.fa-facebook,
+.fa-instagram,
+.fa-twitter,
+.fa-linkedin{
+    transition: 0.5s;
+}
+.column .p-footer{
+    font-size: 25px;
+    padding-top: 25px;
+}
+.fa-circle-chevron-up{
+    margin-top: 35px;
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    transition: 0.2s;
+}
+.fa-circle-chevron-up:hover{
+    background-color: #694c07;
+    transition: 0.2s;
+}
+   
+/* STUDENT PAGE */
+.cover-student{
+  background-image: url(../img/student.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 90vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0px;
+ 
+}
+.imgstudent{
+    background-color: rgb(255, 255, 255);
+    height: 400px;}
+
+    .imgstudent .cupimg{
+        width: 800px;
+        height: 450px;
+        opacity: 0.7;
+    }
+.cta{
+    width: auto;
+    background-color: #faf7f7;
+    height: 200px;
+    text-align: center;
+    text-decoration:none;
+}
+.studentpr{
+    text-align: left;
+    float: right;
+    font-size: 16px;
+}
+ a .ctabtn{
+    margin-top: 10px;
+}
+.student-heading{
+    font-size: 50px;
+    margin-top: 300px;
+}
+
+.cta a{
+    text-decoration: none;
+    color: rgb(150, 97, 11);
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+.cta .ctabtn:hover{
+    color: #b98306;
+    transition: 0.2s;
+ 
+}
+#plain{
+    background-color: #ffffff;
+    height:200px;
+}
+#plain .hrw{
+    opacity: 0.2;
+}
+.details{
+    height: 500;
+}
+
+/* REGISTER FORM*/
+input{
+    display: inline-block;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    width: 600px;
+    font-weight: 100;
+    margin-top: 2PX;
+    text-shadow: 5% 2%;
+    color: rgb(11, 11, 11);
+    text-align: left;
+    border-radius: 10px 10px;
+    
+}
+.content{
+    padding-top: none;
+    margin-top: none;
+    
+}
+.contain{
+    background-color: rgba(95, 126, 134, 0.532);
+    height: 500px;
+    width: 1000px;
+    text-align: center;
+    float: right;
+    padding-top: 50px;
+    border-radius: 4px 4px;
+}
+
+label{
+    font-size: 25px;
+    margin-top:15px;
+    font-weight: 100;
+    color: black;
+}
+.button1{
+    background-color: #694c07;
+    font-size: 15px;
+    margin-top: 0.5cm;
+    color: rgb(255, 255, 255);
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+    border: none;
+    margin-bottom: 1cm;
+    border-radius: 3px 3px;
+}
+.button1:hover{
+    background-color: rgb(164, 115, 47);
+    box-shadow: 0 1px rgb(215, 137, 94);
+    border-radius: 2px 2px;
+    transition: 2s;
+    border-radius: 3px 3px;
+   
+}
+.column1 li{
+    list-style: none;
+    padding-top: 0.2cm;
+    float: left;
+    text-align: left;
+}
+.column2 input{
+   padding-right: 20px;
+}
+.confirm{
+    margin-top: 8px;
+    text-transform: lowercase;
+    color: rgb(108, 6, 6);
+}
+/* OFFICE PAGE */
+.logsect{
+    background-color: #694c07;
+
+}
+/* OFFICELOG PAGE */
+.button2{
+    background-color: #694c07;
+        font-size: 15px;
+        margin-top: 0.5cm;
+        color: rgb(3, 3, 3);
+        width: 200px;
+        height: 50px;
+        box-sizing: border-box;
+        border: none;
+        margin-bottom: 1cm;
+        border-radius: 3px 3px;
+        box-shadow: 5px 6px 5px  6px;
+
+    }
+.login-section .columnp{
+    margin-top: 20px;
+    border-radius: 10px 10px;
+    box-shadow: 5px 6px 7px 6px;
+    height:500px;
+    width: 900px;
+    background-color: #faf7f7;
+    text-align: center;
+}
+.columnq li{
+    list-style: none;
+    padding-top: 110px;
+    text-align: left;
+}
+.columng input{
+    margin-top: 110px;
+}
+.loghr{
+    margin-top: 30px;
+    
+}
+/* CONTACT PAGE*/
+textarea{
+    height:90px;
+}
+.msg{
+    margin-top: 2px;
+}
+.contact-cover{
+    background-image: url(../img/pattern.jpg);
+    height: 400px;
+
+    text-align: center;
+}
+.contact-cover h2{
+    padding-top: 200px;
+    color: white;
+}
+.offic{
+    margin-top: 80px;
+}
+.colum{
+    float: right;
+}
+
+/*DISPLAYING PAGE */
+.tabl{
+    margin-top: 100px;
+    background-color: #2c4c6189;
+
+}
+.headdis{
+    text-align: center;
+    margin-top: 20px;
+}
+ /*messages page */
+
+ a .btnlogout:hover{
+    background-color: #b98306;
+    transition: 2s;
+ }
+a .btnlogout{
+    list-style: none;
+    text-decoration: none;
+    height: 50px;
+    width: 130px;
+    border-radius: 4px 4px;
+    transition: 2s;
+    background-color: #694c07;
+    color: white;
+    float: right;
+    text-align: center;
+ }
+ a.btnlogout1:hover{
+    background-color: #b98306;
+    transition: 2s;
+ }
+
+ a.btnlogout1{
+    list-style: none;
+    text-decoration: none;
+    height: 50px;
+    width: 130px;
+    border-radius: 4px 4px;
+    transition: 2s;
+    background-color: #694c07;
+    color: white;
+    float: left;
+    text-align: center;
+ }
+a .view-btn{
+    list-style: none;
+    text-decoration: none;
+    height: 50px;
+    width: 130px;
+    border-radius: 4px 4px;
+    transition: 2s;
+    background-color: #694c07;
+    color: white;
+    float:left;
+    text-align: center; 
+}
+a .view-btn:hover{
+    background-color: #b98306;
+    transition: 2s;
+ }
+.appl-head{
+    color: #694c07;
+    text-align: center;
+}
+ul .btn-admin{
+    list-style: none;
+    text-decoration: none;
+}
