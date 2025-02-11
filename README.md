@@ -1,2 +1,2 @@
 # student
-this a project for running purpose
+A school website integrated with the student Management system
